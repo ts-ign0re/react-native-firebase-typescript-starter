@@ -46,6 +46,16 @@
     "react-test-renderer": "16.9.0",
     "typescript": "^3.6.3"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn lint:js --fix", "git add . -A"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "jest": {
     "preset": "react-native",
     "moduleFileExtensions": [
