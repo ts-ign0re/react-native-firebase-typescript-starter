@@ -8,7 +8,8 @@
     "start": "react-native start",
     "test": "jest",
     "rename": "react-native-rename",
-    "lint:js": "eslint src/* --ext .tsx --ext .ts --ignore-pattern node_modules/"
+    "lint:js": "eslint src/* --ext .tsx --ext .ts --ignore-pattern node_modules/",
+    "postinstall": "cd ./ios && pod install"
   },
   "dependencies": {
     "@react-native-firebase/analytics": "^6.0.4",
